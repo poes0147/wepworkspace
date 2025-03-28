@@ -12,9 +12,13 @@ connectionLimit :process.env.DB_LIMIT,
 permitSetMultiParamEntries : true,
 insertIdAsNumber : true,
 bigIntAsNumber : true,
+logger : {
+  query : (msg) => console.log(msg),
+  error : (err)=> console.log(err),
+}//마리아 DB가 정확하게 작동하는지 체크할 수 있는 방법
 });
 
-let testSql = `SELECT * FROM customerXs`;
+let testSql = `SELECT * FROM customers`;
 
 // const query = ()=>{
 //   return connectionPool.query(testSql,null, (err,result)=>{
@@ -25,7 +29,7 @@ let testSql = `SELECT * FROM customerXs`;
 const query = (alias,values)=>{
   return new Promise((resolve, reject)=>{
     let executeSql = sqlList[alias];
-    console.log(`sql : ${executeSql}`);
+    // console.log(`sql : ${executeSql}`);
     connectionPool.query(executeSql, values, (err, result)=>{//비동기 방식이기에 코드 안에서 한번 더 작동할 수 있도록 감싸는..... 그래야 결과값을 받아올 수 있음
       if(err){
         reject({err});
