@@ -1,17 +1,19 @@
+require('dotenv').config({path : './mapper/dbConfig.env'})
+
 const express = require('express');
 const app = express();
-const empRouter = require('./router/empoyees_router.js');
+const empRouter = require('./router/employees_router.js');
 
 
 //미들웨어
 // application/x-form-urlencoded
-app.use(express.urlendcoded({extended : false}));
+app.use(express.urlencoded({extended : false}));
 //application / json
-app.use(express.json);
+app.use(express.json());
 
-app.listen(5000,()=>{
+app.listen(3000,()=>{
   console.log('server start');
-  console.log('http://localhost:5000');
+  console.log('http://localhost:3000');
 })
 
 //라우팅
