@@ -35,7 +35,6 @@ router.put('/customers/:id', async (req,res)=>{
 router.delete('/customers/:id', async(req,res)=>{
   let custId = req.params.id;
   let result = await custService.removeCustomerInfo(custId);
-  console.log("요청 id 확인:", req.id);
   res.send(result)
 });
 

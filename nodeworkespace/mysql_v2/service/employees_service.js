@@ -16,7 +16,6 @@ const  addEmployee = async (empInfo)=>{
   let columnlist = ['first_name' ,'last_name' ,'email' ,'gender' ,'ip_address']
   let addInfo = converterAray(empInfo, columnlist);
   let result = await mariaDB.query('insertInfo', addInfo);
-  console.log("전달될 파라미터 배열:", addInfo);
   return result;
 };
 const converterAray = (target, list) =>{
@@ -32,7 +31,6 @@ const converterAray = (target, list) =>{
 const   modifyEmployeeInfo = async (empUpInfo, empId)=>{
   let updateInfo = [empUpInfo, empId]
   let result = await mariaDB.query('updateInfo',updateInfo)
-  console.log("전달될 파라미터 배열:", updateInfo);
   return result;
 };
 //삭제

@@ -30,7 +30,7 @@ router.put('/employees/:id', async (req,res)=>{
     console.log("요청 바디 확인:", req.params.id);
     console.log("요청 바디 확인:", req.body);
     res.send(result);
-})
+})  
 //삭제 : DELETE +
 router.delete('/employees/:id',async (req,res)=>{
     let empId  = req.params.id;
