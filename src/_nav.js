@@ -54,7 +54,7 @@ export default [
       {
         component: 'CNavItem',
         name: 'Dashboard',
-        to: '/dashboard',
+        to: '/Etc/dashboard',
         icon: 'cil-speedometer',
         badge: {
           color: 'primary',
@@ -68,13 +68,13 @@ export default [
       {
         component: 'CNavItem',
         name: 'Colors',
-        to: '/theme/colors',
+        to: '/Etc/theme/colors',
         icon: 'cil-drop',
       },
       {
         component: 'CNavItem',
         name: 'Typography',
-        to: '/theme/typography',
+        to: '/Etc/theme/typography',
         icon: 'cil-pencil',
       },
       {
@@ -84,23 +84,23 @@ export default [
       {
         component: 'CNavGroup',
         name: 'Base',
-        to: '/base',
+        to: '/Etc/base',
         icon: 'cil-puzzle',
         items: [
           {
             component: 'CNavItem',
             name: 'Accordion',
-            to: '/base/accordion',
+            to: '/Etc/base/accordion',
           },
           {
             component: 'CNavItem',
             name: 'Breadcrumbs',
-            to: '/base/breadcrumbs',
+            to: '/Etc/base/breadcrumbs',
           },
           {
             component: 'CNavItem',
             name: 'Cards',
-            to: '/base/cards',
+            to: '/Etc/base/cards',
           },
           {
             component: 'CNavItem',
@@ -115,42 +115,42 @@ export default [
           {
             component: 'CNavItem',
             name: 'Carousels',
-            to: '/base/carousels',
+            to: '/Etc/base/carousels',
           },
           {
             component: 'CNavItem',
             name: 'Collapses',
-            to: '/base/collapses',
+            to: '/Etc/base/collapses',
           },
           {
             component: 'CNavItem',
             name: 'List Groups',
-            to: '/base/list-groups',
+            to: '/Etc/base/list-groups',
           },
           {
             component: 'CNavItem',
             name: 'Navs & Tabs',
-            to: '/base/navs',
+            to: '/Etc/base/navs',
           },
           {
             component: 'CNavItem',
             name: 'Paginations',
-            to: '/base/paginations',
+            to: '/Etc/base/paginations',
           },
           {
             component: 'CNavItem',
             name: 'Placeholders',
-            to: '/base/placeholders',
+            to: '/Etc/base/placeholders',
           },
           {
             component: 'CNavItem',
             name: 'Popovers',
-            to: '/base/popovers',
+            to: '/Etc/base/popovers',
           },
           {
             component: 'CNavItem',
             name: 'Progress',
-            to: '/base/progress',
+            to: '/Etc/base/progress',
           },
           {
             component: 'CNavItem',
@@ -174,22 +174,22 @@ export default [
           {
             component: 'CNavItem',
             name: 'Spinners',
-            to: '/base/spinners',
+            to: '/Etc/base/spinners',
           },
           {
             component: 'CNavItem',
             name: 'Tables',
-            to: '/base/tables',
+            to: '/Etc/base/tables',
           },
           {
             component: 'CNavItem',
             name: 'Tabs',
-            to: '/base/tabs',
+            to: '/Etc/base/tabs',
           },
           {
             component: 'CNavItem',
             name: 'Tooltips',
-            to: '/base/tooltips',
+            to: '/Etc/base/tooltips',
           },
           {
             component: 'CNavItem',
@@ -206,18 +206,18 @@ export default [
       {
         component: 'CNavGroup',
         name: 'Buttons',
-        to: '/buttons',
+        to: '/Etc/buttons',
         icon: 'cil-cursor',
         items: [
           {
             component: 'CNavItem',
             name: 'Buttons',
-            to: '/buttons/standard-buttons',
+            to: '/Etc/buttons/standard-buttons',
           },
           {
             component: 'CNavItem',
             name: 'Button Groups',
-            to: '/buttons/button-groups',
+            to: '/Etc/buttons/button-groups',
           },
           {
             component: 'CNavItem',
@@ -232,35 +232,35 @@ export default [
           {
             component: 'CNavItem',
             name: 'Dropdowns',
-            to: '/buttons/dropdowns',
+            to: '/Etc/buttons/dropdowns',
           },
         ],
       },
       {
         component: 'CNavGroup',
         name: 'Forms',
-        to: '/forms',
+        to: '/Etc/forms',
         icon: 'cil-notes',
         items: [
           {
             component: 'CNavItem',
             name: 'Form Control',
-            to: '/forms/form-control',
+            to: '/Etc/forms/form-control',
           },
           {
             component: 'CNavItem',
             name: 'Select',
-            to: '/forms/select',
+            to: '/Etc/forms/select',
           },
           {
             component: 'CNavItem',
             name: 'Checks & Radios',
-            to: '/forms/checks-radios',
+            to: '/Etc/forms/checks-radios',
           },
           {
             component: 'CNavItem',
             name: 'Range',
-            to: '/forms/range',
+            to: '/Etc/forms/range',
           },
           {
             component: 'CNavItem',
@@ -275,12 +275,12 @@ export default [
           {
             component: 'CNavItem',
             name: 'Input Group',
-            to: '/forms/input-group',
+            to: '/Etc/forms/input-group',
           },
           {
             component: 'CNavItem',
             name: 'Floating Labels',
-            to: '/forms/floating-labels',
+            to: '/Etc/forms/floating-labels',
           },
           {
             component: 'CNavItem',
@@ -324,31 +324,31 @@ export default [
           {
             component: 'CNavItem',
             name: 'Layout',
-            to: '/forms/layout',
+            to: '/Etc/forms/layout',
           },
           {
             component: 'CNavItem',
             name: 'Validation',
-            to: '/forms/validation',
+            to: '/Etc/forms/validation',
           },
         ],
       },
       {
         component: 'CNavItem',
         name: 'Charts',
-        to: '/charts',
+        to: '/Etc/charts',
         icon: 'cil-chart-pie',
       },
       {
         component: 'CNavGroup',
         name: 'Icons',
-        to: '/icons',
+        to: '/Etc/icons',
         icon: 'cil-star',
         items: [
           {
             component: 'CNavItem',
             name: 'CoreUI Icons',
-            to: '/icons/coreui-icons',
+            to: '/Etc/icons/coreui-icons',
             badge: {
               color: 'info',
               text: 'NEW',
@@ -357,47 +357,47 @@ export default [
           {
             component: 'CNavItem',
             name: 'Brands',
-            to: '/icons/brands',
+            to: '/Etc/icons/brands',
           },
           {
             component: 'CNavItem',
             name: 'Flags',
-            to: '/icons/flags',
+            to: '/Etc/icons/flags',
           },
         ],
       },
       {
         component: 'CNavGroup',
         name: 'Notifications',
-        to: '/notifications',
+        to: '/Etc/notifications',
         icon: 'cil-bell',
         items: [
           {
             component: 'CNavItem',
             name: 'Alerts',
-            to: '/notifications/alerts',
+            to: '/Etc/notifications/alerts',
           },
           {
             component: 'CNavItem',
             name: 'Badges',
-            to: '/notifications/badges',
+            to: '/Etc/notifications/badges',
           },
           {
             component: 'CNavItem',
             name: 'Modals',
-            to: '/notifications/modals',
+            to: '/Etc/notifications/modals',
           },
           {
             component: 'CNavItem',
             name: 'Toasts',
-            to: '/notifications/toasts',
+            to: '/Etc/notifications/toasts',
           },
         ],
       },
       {
         component: 'CNavItem',
         name: 'Widgets',
-        to: '/widgets',
+        to: '/Etc/widgets',
         icon: 'cil-calculator',
         badge: {
           color: 'primary',
@@ -412,28 +412,28 @@ export default [
       {
         component: 'CNavGroup',
         name: 'Pages',
-        to: '/pages',
+        to: '/Etc/pages',
         icon: 'cil-star',
         items: [
           {
             component: 'CNavItem',
             name: 'Login',
-            to: '/pages/login',
+            to: '/Etc/pages/login',
           },
           {
             component: 'CNavItem',
             name: 'Register',
-            to: '/pages/register',
+            to: '/Etc/pages/register',
           },
           {
             component: 'CNavItem',
             name: 'Error 404',
-            to: '/pages/404',
+            to: '/Etc/pages/404',
           },
           {
             component: 'CNavItem',
             name: 'Error 500',
-            to: '/pages/500',
+            to: '/Etc/pages/500',
           },
         ],
       },
