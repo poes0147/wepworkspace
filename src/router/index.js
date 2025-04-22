@@ -69,6 +69,85 @@ const routes = [
         name: 'Widgets',
         component: () => import('@/views/Etc/widgets/Widgets.vue'),
       },
+      {
+        path: 'Etc/buttons',
+        name: 'Buttons',
+        component: { render: () => h(resolveComponent('router-view')) },
+        redirect: '/Etc/buttons/standard-buttons',
+        children: [
+          {
+            path: 'standard-buttons',
+            name: 'Button Component',
+            component: () => import('@/views/Etc/buttons/Buttons.vue'),
+          },
+          {
+            path: 'dropdowns',
+            name: 'Dropdowns',
+            component: () => import('@/views/Etc/buttons/Dropdowns.vue'),
+          },
+          {
+            path: 'button-groups',
+            name: 'Button Groups',
+            component: () => import('@/views/Etc/buttons/ButtonGroups.vue'),
+          },
+        ],
+      },
+      {
+        path: 'Etc/notifications',
+        name: 'Notifications',
+        component: { render: () => h(resolveComponent('router-view')) },
+        redirect: '/Etc/notifications/alerts',
+        children: [
+          {
+            path: 'alerts',
+            name: 'Alerts',
+            component: () => import('@/views/Etc/notifications/Alerts.vue'),
+          },
+          {
+            path: 'badges',
+            name: 'Badges',
+            component: () => import('@/views/Etc/notifications/Badges.vue'),
+          },
+          {
+            path: 'modals',
+            name: 'Modals',
+            component: () => import('@/views/Etc/notifications/Modals.vue'),
+          },
+          {
+            path: 'toasts',
+            name: 'Toasts',
+            component: () => import('@/views/Etc/notifications/Toasts.vue'),
+          },
+        ],
+      },
+      {
+        path: 'Etc/icons',
+        name: 'Icons',
+        component: { render: () => h(resolveComponent('router-view')) },
+        redirect: '/Etc/icons/coreui-icons',
+        children: [
+          {
+            path: 'coreui-icons',
+            name: 'CoreUI Icons',
+            component: () => import('@/views/Etc/icons/CoreUIIcons.vue'),
+          },
+          {
+            path: 'brands',
+            name: 'Brands',
+            component: () => import('@/views/Etc/icons/Brands.vue'),
+          },
+          {
+            path: 'flags',
+            name: 'Flags',
+            component: () => import('@/views/Etc/icons/Flags.vue'),
+          },
+        ],
+      },
+      {
+        path: 'Etc/charts',
+        name: 'Charts',
+        component: () => import('@/views/Etc/charts/Charts.vue'),
+      },
     ],
   },
   {
