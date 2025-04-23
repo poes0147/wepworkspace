@@ -17,12 +17,12 @@ const sidebar = useSidebarStore() // unfoldable, visible 등 상태 관리
 <template>
   <!-- CoreUI 사이드바 전체 컴포넌트 -->
   <CSidebar
-    class="border-end"               <!-- 우측 경계선 -->
-    colorScheme="dark"               <!-- 다크 테마 -->
-    position="fixed"                 <!-- 고정 위치 -->
-    :unfoldable="sidebar.unfoldable" <!-- 접힘 여부 상태 -->
-    :visible="sidebar.visible"       <!-- 표시 여부 상태 -->
-    @visible-change="(value) => sidebar.toggleVisible(value)" <!-- 표시 상태 변경시 동기화 -->
+    class="border-end"               
+    colorScheme="dark"               
+    position="fixed"                 
+    :unfoldable="sidebar.unfoldable" 
+    :visible="sidebar.visible"       
+    @visible-change="(value) => sidebar.toggleVisible(value)" 
   >
     <!-- 사이드바 상단 헤더 (로고 영역) -->
     <CSidebarHeader class="border-bottom">

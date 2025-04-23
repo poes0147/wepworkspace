@@ -153,12 +153,30 @@ const routes = [
   {
     path: '/pages',
     name: 'Pages',
-    component: { render: () => h(resolveComponent('router-view')) },
+    component: {
+      render: () => h(resolveComponent('router-view')),
+    },
     children: [
-      { path: '404', name: 'Page404', component: () => import('@/views/Etc/pages/Page404') },
-      { path: '500', name: 'Page500', component: () => import('@/views/Etc/pages/Page500') },
-      { path: 'login', name: 'Login', component: () => import('@/views/Etc/pages/Login') },
-      { path: 'register', name: 'Register', component: () => import('@/views/Etc/pages/Register') },
+      {
+        path: '404',
+        name: 'Page404',
+        component: () => import('@/views/Etc/pages/Page404.vue'),
+      },
+      {
+        path: '500',
+        name: 'Page500',
+        component: () => import('@/views/Etc/pages/Page500.vue'),
+      },
+      {
+        path: 'login',
+        name: 'Login',
+        component: () => import('@/views/Etc/pages/Login.vue'),
+      },
+      {
+        path: 'register',
+        name: 'Register',
+        component: () => import('@/views/Etc/pages/Register.vue'),
+      },
     ],
   },
 ]
