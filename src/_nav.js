@@ -8,6 +8,9 @@ export default [
     name: '영업',
     to: '/sales',
     icon: 'cil-briefcase',
+    visible: true,
+    items: [
+    ]
   },
   {
     component: 'CNavItem',
